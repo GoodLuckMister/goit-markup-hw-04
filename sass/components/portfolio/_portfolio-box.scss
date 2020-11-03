@@ -1,0 +1,43 @@
+.text-box {
+  padding: 20px;
+}
+.portfolio_list {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 95px;
+
+  &_item {
+    flex-basis: 370px;
+    border: 1px solid getColor("color-border");
+    margin-right: 25px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(-n + 6) {
+      margin-bottom: 25px;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: $item-hover;
+    }
+  }
+  &_link {
+    text-decoration: none;
+  }
+  &_title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0.5;
+    letter-spacing: 0.06em;
+    color: getColor("text");
+  }
+  &_text {
+    font-size: 16px;
+    line-height: 0.5;
+    letter-spacing: 0.03em;
+    color: getColor("text-mini");
+  }
+}

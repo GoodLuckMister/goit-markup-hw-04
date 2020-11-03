@@ -1,0 +1,28 @@
+.filter_title {
+  display: none;
+}
+.filter_list_link {
+  display: block;
+  padding: 6px 22px;
+  background-color: getColor("background-color");
+  color: getColor("text");
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: getColor("hover");
+    color: getColor("background");
+  }
+}
+.filter_list {
+  display: flex;
+  justify-content: center;
+  &_item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.filter-container {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}

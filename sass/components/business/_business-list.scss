@@ -1,0 +1,12 @@
+.business_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+  &_item {
+    width: 270px;
+  }
+}
+.business-container {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}

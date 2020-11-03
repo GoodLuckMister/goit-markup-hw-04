@@ -3,82 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-      <link rel="stylesheet" href="./style/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+  rel="stylesheet">
+   <link rel="stylesheet" href="./css/main.min.css">
     <title>WebStudio</title>
   </head>
   <body>
     <!--=========================Header navigation======================-->
-    <header>
-      <div class="header-box">
+    <header class="header">
+      <div class="container header-container">
         <a class="logo" href="./index.html">
           Web<span class="logo-decore">Studio</span>
         </a>
-        <nav>
-          <ul class="nav_list">
-            <li class="nav_items"><a class="link" href="./index.html">Студия</a></li>
-            <li class="nav_items"><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav_items"><a class="link" href="#footer">Контакты</a></li>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-items"><a class="link link_activ" href="./index.html">Студия</a></li>
+            <li class="nav-list-items"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-list-items"><a class="link" href="#footer">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="nav_list">
-          <li class="nav_items"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="nav_items"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="nav-list">
+          <li class="nav-list-items"><a class="link link_cont" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="nav-list-items"><a class="link link_cont" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
     <!--========================section hero================================-->
 
-    <section>
-      <div class="hero-container">
-        <h1 class="hero-title">Эффективные решения <span class="hero_title">для вашего бизнеса</span></h1>
+    <section class="hero">
+      <div class="container hero-container">
+        <h1 class="hero-title">Эффективные решения <span>для вашего бизнеса</span></h1>
         <!-- <img src="./images/squoosh/Bg.jpg" alt="backgroung-image" /> -->
-        <button type="button" class="button">Заказать услугу</button>
+        <button class="button" type="button">Заказать услугу</button>
       </div>
     </section>
     <!--========================section business==========================-->
 
     <section>
-      <div class="business_box">
-      <ul class="business-list">
-        <li class="business_items">
-          <h2 class="business_title">Внимание к деталям</h2>
-          <p class="business-text">
+      <div class="container business-container">
+      <ul class="business_list">
+        <li class="business_list_item">
+          <h2 class="business_list_title">Внимание к деталям</h2>
+          <p class="business_list_text">
             Идейные соображения, а также начало повседневной работы по
             формированию позиции.
           </p>
         </li>
-        <li class="business_items">
-          <h2 class="business_title">Пунктуальность</h2>
-          <p class="business-text">
+        <li class="business_list_item">
+          <h2 class="business_list_title">Пунктуальность</h2>
+          <p class="business_list_text">
             Задача организации, в особенности же рамки и место обучения кадров
             влечет за собой.
           </p>
         </li>
-        <li class="business_items">
-          <h2 class="business_title">Планирование</h2>
-          <p class="business-text">
+        <li class="business_list_item">
+          <h2 class="business_list_title">Планирование</h2>
+          <p class="business_list_text">
             Равным образом консультация с широким активом в значительной степени
             обуславливает.
           </p>
         </li>
-        <li class="business_items">
-          <h2 class="business_title">Современные технологии</h2>
-          <p class="business-text">
+        <li class="business_list_item">
+          <h2 class="business_list_title">Современные технологии</h2>
+          <p class="business_list_text">
             Значимость этих проблем настолько очевидна, что реализация плановых
             заданий.
           </p>
         </li>
       </ul>
-      <h3 class="business-title"> Чем мы занимаемся</h3>
-      <ul class="business-img_list">
-        <li class="business-img">
+      <h3 class="other_title">Чем мы занимаемся</h3>
+      <ul class="business_list">
+        <li>
           <img src="./images/squoosh/noot1.jpg" alt="noot1" width="370" />
         </li>
-        <li class="business-img"><img src="./images/squoosh/noot.jpg" alt="noot" width="370" /></li>
-        <li class="business-img">
+        <li><img src="./images/squoosh/noot.jpg" alt="noot" width="370" /></li>
+        <li>
           <img src="./images/squoosh/noot2.jpg" alt="noot2" width="370" />
         </li>
       </ul>
@@ -86,52 +85,52 @@
     </section>
     <!--========================section team==============================-->
 
-    <section>
-      <div class="team_box">
-      <h2 class="business-title">Наша команда</h2>
-      <ul class="team-list">
-        <li class="team-items">
-          <img src="./images/squoosh/igor.jpg" alt="igor" width="270" />
-          <h3 class="team_title">Игорь Демьяненко</h3>
-          <p class="team_text">Product Designer</p>
+    <section class="team">
+      <div class="container team-container">
+      <h2 class="other_title">Наша команда</h2>
+      <ul class="team_list">
+        <li class="team_list_item">
+          <img class="team_list_image" src="./images/squoosh/igor.jpg" alt="igor" width="270" />
+          <h3 class="team_list_title">Николай Кучеренко</h3>
+          <p class="team_list_text">Product Designer</p>
         </li>
-        <li class="team-items">
-          <img src="./images/squoosh/olga.jpg" alt="olga" width="270" />
-          <h3 class="team_title">Ольга Репина</h3>
-          <p class="team_text">Frontend Developer</p>
+        <li class="team_list_item">
+          <img class="team_list_image" src="./images/squoosh/olga.jpg" alt="olga" width="270" />
+          <h3 class="team_list_title">Ольга Иванова</h3>
+          <p class="team_list_text">Frontend Developer</p>
         </li>
-        <li class="team-items">
-          <img src="./images/squoosh/nikolay.jpg" alt="nikolay" width="270" />
-          <h3 class="team_title">Николай Тарасов</h3>
-          <p class="team_text">Marketing</p>
+        <li class="team_list_item">
+          <img class="team_list_image" src="./images/squoosh/nikolay.jpg" alt="nikolay" width="270" />
+          <h3 class="team_list_title">Андрей Шевченко</h3>
+          <p class="team_list_text">Marketing</p>
         </li>
-        <li class="team-items">
-          <img src="./images/squoosh/mihail.jpg" alt="mihail" width="270" />
-          <h3 class="team_title">Михаил Ермаков</h3>
-          <p class="team_text">UI Designer</p>
+        <li class="team_list_item">
+          <img class="team_list_image" src="./images/squoosh/mihail.jpg" alt="mihail" width="270" />
+          <h3 class="team_list_title">Иван Николаев</h3>
+          <p class="team_list_text">UI Designer</p>
         </li>
       </ul>
       </div>
     </section>
     <!--=========================footer=============================== -->
-    <footer id="footer">
-      <div class="footer_box">
-        <a class="logo logo_footer" href="./index.html">
-          Web<span class="logo-decore-footer">Studio</span>
+    <footer id="footer" class="footer">
+      <div class="container footer-box">
+        <a class="logo " href="./index.html">Web
+        <span class="logo-footer">Studio</span>
         </a>
 
-        <address>
-          <ul class="footer_list" >
-            <li class="address-items">
-              <a class="footer_address"
+        <address class="address">
+          <ul class="address_list">
+            <li class="address_list_item">
+              <a class="address_list_link address_list_link-map "
                 href="https://goo.gl/maps/5dLGJM3JufGwCpMH7"
                 target="_blank"
                 rel="noopener noreferer "
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="address-items"><a class="footer_link" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-            <li class="address-items"><a class="footer_link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="address_list_item"><a class="address_list_link" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
+            <li class="address_list_item"><a class="address_list_link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>
