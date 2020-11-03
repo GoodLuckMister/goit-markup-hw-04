@@ -8,6 +8,7 @@
   &:hover,
   &:focus {
     color: getColor("hover");
+    fill: getColor("hover");
   }
   &_activ {
     color: getColor("hover");
@@ -18,5 +19,19 @@
     font-size: 14px;
     line-height: 16px;
     color: getColor("text-mini");
+    fill: getColor("text-mini");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_symbol {
+      width: 16px;
+      height: 11.2px;
+      margin-right: 10px;
+      &_mobile {
+        width: 10px;
+        height: 15px;
+        margin-right: 10px;
+      }
+    }
   }
 }

@@ -5,11 +5,18 @@
   text-transform: uppercase;
   margin-top: 0;
   color: getColor("background");
+  &_decor {
+    display: block;
+  }
 }
 .hero-container {
   text-align: center;
   padding: 200px 250px;
+  max-width: 1600px;
+  height: 600px;
+  background-image: $gradient, url(../images/squoosh/background-monitor.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .hero {
-  background-color: getColor("foreground");
 }

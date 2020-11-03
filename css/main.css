@@ -329,6 +329,7 @@ ul {
 
 .link:hover, .link:focus {
   color: #2196f3;
+  fill: #2196f3;
 }
 
 .link_activ {
@@ -340,6 +341,28 @@ ul {
   font-size: 14px;
   line-height: 16px;
   color: #757575;
+  fill: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link_cont_symbol {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+}
+
+.link_cont_symbol_mobile {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
 }
 
 .header-container {
@@ -383,13 +406,19 @@ ul {
   color: white;
 }
 
+.hero-title_decor {
+  display: block;
+}
+
 .hero-container {
   text-align: center;
   padding: 200px 250px;
-}
-
-.hero {
-  background-color: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5))), url(../images/squoosh/background-monitor.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url(../images/squoosh/background-monitor.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .business_list_title {
@@ -429,6 +458,28 @@ ul {
 
 .business_list_item {
   width: 270px;
+}
+
+.business_list_box {
+  width: 270px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.business_symbol {
+  width: 70px;
+  height: 70px;
 }
 
 .business-container {
@@ -481,6 +532,94 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
+.symbol_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 24px;
+}
+
+.symbol_list_item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.symbol_list_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.symbol_list_item:hover, .symbol_list_item:focus {
+  background-color: #2196f3;
+}
+
+.symbol_list_item:hover .symbol_list_image,
+.symbol_list_item:focus .symbol_list_image {
+  fill: white;
+}
+
+.symbol_list_image {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1170px;
+}
+
+.clients_item {
+  width: 170px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clients_item:hover, .clients_item:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients_item:hover .clients_symbol {
+  fill: #2196f3;
+}
+
+.clients_symbol {
+  fill: #afb1b8;
+}
+
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .address_list_link {
   font-size: 14px;
   line-height: 0.6;
@@ -513,7 +652,32 @@ ul {
 }
 
 .footer {
+  position: relative;
   background-color: #2f303a;
+}
+
+.symbol_footer {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.symbol_footer_title {
+  font-size: 14px;
+  line-height: 0.9;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.symbol_footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.symbol_footer_list_item {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .text-box {

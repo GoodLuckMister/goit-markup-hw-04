@@ -24,5 +24,6 @@
   display: inline-block;
 }
 .footer {
+  position: relative;
   background-color: getColor("foreground");
 }

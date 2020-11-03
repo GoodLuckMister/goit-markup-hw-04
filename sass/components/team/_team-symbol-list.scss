@@ -1,0 +1,30 @@
+.symbol_list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  &_item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:hover,
+    &:focus {
+      background-color: getColor("hover");
+    }
+    &:hover .symbol_list_image,
+    &:focus .symbol_list_image {
+      fill: getColor("background");
+    }
+  }
+
+  &_image {
+    width: 20px;
+    height: 20px;
+    fill: getColor("border");
+  }
+}

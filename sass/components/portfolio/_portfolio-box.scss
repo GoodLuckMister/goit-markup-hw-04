@@ -10,7 +10,7 @@
 
   &_item {
     flex-basis: 370px;
-    border: 1px solid getColor("color-border");
+    border: 1px solid getColor("border-portfolio");
     margin-right: 25px;
 
     &:nth-child(3n) {
