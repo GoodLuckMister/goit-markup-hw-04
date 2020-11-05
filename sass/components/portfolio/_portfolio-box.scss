@@ -9,8 +9,7 @@
   padding-bottom: 95px;
 
   &_item {
-    flex-basis: 370px;
-    border: 1px solid getColor("border-portfolio");
+    flex-basis: 360px;
     margin-right: 25px;
 
     &:nth-child(3n) {
@@ -25,7 +24,17 @@
     }
   }
   &_link {
+    display: block;
+
     text-decoration: none;
+    outline: 1px solid getColor("border-portfolio");
+    // box-shadow: $item-hover;
+    &:hover,
+    &:focus {
+      box-shadow: $item-hover;
+      // border: 1px solid getColor("border-portfolio");
+    }
+    // border: 1px solid getColor("border-portfolio");
   }
   &_title {
     font-weight: bold;

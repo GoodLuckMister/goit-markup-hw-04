@@ -12,6 +12,7 @@
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  outline: 0;
   &:hover,
   &:focus {
     background-color: getColor("hover");

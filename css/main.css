@@ -349,7 +349,6 @@ summary {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  outline: 0;
 }
 
 .container {
@@ -763,9 +762,8 @@ ul {
 }
 
 .portfolio_list_item {
-  -ms-flex-preferred-size: 370px;
-      flex-basis: 370px;
-  border: 1px solid #eeeeee;
+  -ms-flex-preferred-size: 360px;
+      flex-basis: 360px;
   margin-right: 25px;
 }
 
@@ -783,7 +781,14 @@ ul {
 }
 
 .portfolio_list_link {
+  display: block;
   text-decoration: none;
+  outline: 1px solid #eeeeee;
+}
+
+.portfolio_list_link:hover, .portfolio_list_link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio_list_title {
@@ -816,6 +821,7 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  outline: 0;
 }
 
 .filter_list_link:hover, .filter_list_link:focus {
