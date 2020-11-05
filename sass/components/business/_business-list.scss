@@ -1,7 +1,9 @@
 .business_list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 95px;
+  &:not(:last-child) {
+    margin-bottom: 95px;
+  }
   &_item {
     width: 270px;
   }

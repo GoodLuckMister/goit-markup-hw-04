@@ -436,7 +436,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-list {
@@ -511,6 +511,9 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.business_list:not(:last-child) {
   margin-bottom: 95px;
 }
 
@@ -600,7 +603,12 @@ ul {
   padding-bottom: 24px;
 }
 
-.symbol_list_item {
+.symbol_list_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.symbol_list_link {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -613,18 +621,15 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  outline: 0;
 }
 
-.symbol_list_item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.symbol_list_item:hover, .symbol_list_item:focus {
+.symbol_list_link:hover, .symbol_list_link:focus {
   background-color: #2196f3;
 }
 
-.symbol_list_item:hover .symbol_list_image,
-.symbol_list_item:focus .symbol_list_image {
+.symbol_list_link:hover .symbol_list_image,
+.symbol_list_link:focus .symbol_list_image {
   fill: white;
 }
 
@@ -644,7 +649,7 @@ ul {
   width: 1170px;
 }
 
-.clients_item {
+.clients_link {
   width: 170px;
   height: 90px;
   display: -webkit-box;
@@ -658,14 +663,15 @@ ul {
           align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  cursor: pointer;
+  outline: 0;
 }
 
-.clients_item:hover, .clients_item:focus {
+.clients_link:hover, .clients_link:focus {
   border: 1px solid #2196f3;
 }
 
-.clients_item:hover .clients_symbol {
+.clients_link:hover .clients_symbol,
+.clients_link:focus .clients_symbol {
   fill: #2196f3;
 }
 
@@ -735,6 +741,7 @@ ul {
 }
 
 .symbol_footer_list_item {
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
 

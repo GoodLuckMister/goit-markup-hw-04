@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 1170px;
-  &_item {
+  &_link {
     width: 170px;
     height: 90px;
     display: flex;
@@ -10,12 +10,13 @@
     align-items: center;
     border: 1px solid getColor("border");
     border-radius: 4px;
-    cursor: pointer;
+    outline: 0;
     &:hover,
     &:focus {
       border: 1px solid getColor("hover");
     }
-    &:hover .clients_symbol {
+    &:hover .clients_symbol,
+    &:focus .clients_symbol {
       fill: getColor("hover");
     }
   }

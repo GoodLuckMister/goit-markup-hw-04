@@ -13,6 +13,7 @@
 .symbol_footer_list {
   display: flex;
   &_item {
+    border-radius: 50%;
     background-color: getColor("background-f");
   }
 }
